@@ -8,7 +8,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins',sans-serif;
+    font-family: "Rubik",'Poppins',sans-serif;
 }
 
 :root {
@@ -259,10 +259,9 @@ span {
     transform: .5s ease;
 }
 
-.portfolio-box:hover img {
+/* .portfolio-box:hover img {
     transform: scale(1.1);
-
-}
+} */
 .portfolio-box .portfolio-layer {
     position: absolute;
     bottom: 0;
@@ -416,6 +415,7 @@ span {
 }
 
 @media ( max-width: 768px) {
+
     #menu-icons {
         display: block;
     }
@@ -491,6 +491,9 @@ span {
     html {
         font-size: 50%;
     }
+    .header {
+        width: 85%;
+    }
     
     .contact form .input-box input {
         width: 100%;
@@ -499,11 +502,11 @@ span {
 
 @media (max-width: 365px) {
     .home-img img {
-        width: 90vh;
+        width: 80vh;
     }
 
     .about-img img {
-        width: 90vh;
+        width: 80vh;
     }
 
     .footer {
