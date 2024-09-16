@@ -287,8 +287,10 @@ span {
 }
 
 .portfolio-layer p {
-    font-size: 1.6rem;
+    font-weight: bold;
+    font-size: 2.6rem;
     margin: .3rem 0 1rem;
+    color: var(--bg-color);
 }
 
 .portfolio-layer a {
@@ -497,6 +499,9 @@ span {
     
     .contact form .input-box input {
         width: 100%;
+    }
+    .portfolio-box {
+        margin-bottom: 29px;
     }
 }
 
