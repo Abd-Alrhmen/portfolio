@@ -46,10 +46,32 @@ window.onscroll = () => {
 // ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
 // ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 // =============================typed js=============
-const typed = new Typed(".multipie-text", {
+const typed = new Typed(".multiple-text", {
   strings: ["FrontEnd Developer", "Ui Ux Designer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
 });
+
+
+// Email Send 
+//   (function(){
+//     emailjs.init("RJy9f6tMPRASpW5cX"); });
+// function sendEmail() {
+//   let templateParams = {
+//     from_name: document.getElementById("FullName").value,
+//     from_email: document.getElementById("emailAddress").value,
+//     mobile: document.getElementById("mobileNumber").value,
+//     subject: document.getElementById("EmailSubject").value,
+//     message: document.getElementById("Message").value
+//   };
+
+//   emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", templateParams)
+//     .then(response => {
+//       alert("Message Sent Successfully!");
+//       document.querySelector("form").reset();
+//     }, error => {
+//       alert("Failed to send message. Please try again.");
+//     });
+// }

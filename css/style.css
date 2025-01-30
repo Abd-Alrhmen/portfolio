@@ -32,8 +32,8 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
-    background: var(--bg-color);
+    padding: 1rem 9%;
+    background: rgb(12 12 12);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -99,7 +99,7 @@ span {
     line-height: 1.3;
 }
 .home-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 .social-media a {
     display: inline-flex;
@@ -157,7 +157,7 @@ span {
     font-size: 2.6rem;
 }
 .about-content p {
-    font-size: 1.6rem;
+    font-size: 1.9rem;
     margin: 2rem 0 3rem;
 }
 
@@ -319,14 +319,9 @@ span {
     }
 }
 @media (max-width: 991px) {
-    .header {
-        padding: 2rem 3%;
-    }
-
     section {
         padding: 10rem 3% 2rem;
     }
-
     .services {
         padding-bottom: 7rem;
     }

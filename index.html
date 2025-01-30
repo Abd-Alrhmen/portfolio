@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdulrahman - A Front-End Developer passionate about creating responsive and user-friendly web experiences.">
+    <meta property="og:title" content="Abdulrahman - Front-End Developer">
+    <meta property="og:description" content="Check out my projects in React & Tailwind!">
+    <meta property="og:image" content="img/my-photo.png">
+    <meta property="og:url" content="https://abd-alrhmen.github.io/portfolio/">
     <link rel="stylesheet" href="css/style.css">
-    <title>my portfolio</title>
+    <title>Abdulrahman - Front-End Developer | React & Tailwind</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
@@ -17,47 +22,45 @@
             <a href="#"class="logo">portfolio</a>
             <i class='bx bx-menu' id="menu-icons"></i>
             <nav class="navbar">
-                <a href="#home"class="active">home</a>
-                <a href="#about">about</a>
-                <a href="#services">services</a>
-                <a href="#portfolio">portfolio</a>
-                <a href="#contact">contact</a>
+                <a aria-label="Home"href="#home"class="active">Home</a>
+                <a aria-label="About"href="#about">About</a>
+                <a aria-label="Services"href="#services">Services</a>
+                <a aria-label="Portfolio Home" href="#portfolio">Portfolio</a>
+                <a aria-label="Contact"href="#contact">Contact</a>
             </nav>
         </header>
-
         <section class="home" id="home">
             <div class="home-content">
                 <h3>Hello, I'm</h3>
                 <h1>Abdulrahman</h1>
-                <h3>And I'm a <span class="multipie-text"></span></h3>
-                <p>"As a front-end developer, I focus on crafting clean,
+                <h3>And I'm a <span class="multiple-text"></span></h3>
+                <p>As a front-end developer, I focus on crafting clean,
                     efficient, and responsive code.
-                    Check out my projects to see my skills in action!"
+                    Check out my projects to see my skills in action!
                 </p>
                 <div class="social-media">
-                    <a href="#"><i class='bx bxl-facebook-circle'></i></a>
-                    <a href="https://github.com/Abd-Alrhmen"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/abdelrahman-ahmed-60b468262/"><i class='bx bxl-linkedin-square'></i></a>
-                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"aria-label="Facebook Profile"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://github.com/Abd-Alrhmen"aria-label="Github Profile"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/abdelrahman-ahmed-60b468262/"aria-label="Linkedin Profile"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="#"aria-label="Instagram Profile"><i class='bx bxl-instagram' ></i></a>
                 </div>
                 <!-- Download CV -->
-                <a href="img/c.v.front.jpg" download class="btn">Download CV</a>
+                <a href="Abdulrahman.front.pdf" download class="btn">Download CV</a>
             </div>
             <div class="home-img">
-                <img src="img/my photo.png" alt="">
+                <img src="img/my photo.png" alt="Abdulrahman Ahmed - Front-End Developer Photo" loading="lazy">
             </div>
         </section>
-
         <section class="about" id="about">
             <div class="about-img">
-                <img src="img/my photo.png" alt="">
+                <img src="img/my photo.png" alt="Abdulrahman Ahmed - Front-End Developer Photo" loading="lazy">
             </div>
             <div class="about-content">
                 <h2 class="heading">About <span>Me</span></h2>
                 <h3>Frontend Developer</h3>
                 <p>
                     I'm a Front-End Developer passionate about creating responsive,
-                    visually appealing, and user-friendly websites.
+                    visually appealing,<br>and user-friendly websites.
                     With expertise in HTML, CSS, JavaScript, Tailwind CSS, and React.js,
                     I specialize in crafting seamless and engaging user experiences.
                     I'm always eager to explore new technologies and refine my skills to stay
@@ -73,7 +76,7 @@
                 <div class="services-box">
                     <i class='bx bx-code-alt'></i>
                     <h3>Web Development</h3>
-                    <p>I specialize in creating dynamic and responsive websites using the latest technologies .
+                    <p>I specialize in creating dynamic and responsive websites using the latest technologies.
                         My focus is on building user-friendly interfaces that provide seamless experiences across
                         all devices. Let's turn your vision into a reality!</p>
                     <a href="#" class="btn">Read more</a>
@@ -92,12 +95,11 @@
                 </div>
             </div>
         </section>
-        
         <section class="portfolio" id="portfolio">
             <h2 class="heading">Latest <span>project</span></h2>
             <div class="portfolio-container">
                 <div class="portfolio-box">
-                    <img src="img/App-password.png" alt="">
+                    <img src="img/App-password.png" alt="App-Password-Generator" loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>Password-Generator</p>
@@ -105,7 +107,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/Tic-tac-game.png" alt="">
+                    <img src="img/Tic-tac-game.png" alt="Tic Tac Toe Game" loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>Tic Tac Toe Game</p>
@@ -113,7 +115,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/Bookmarks.png" alt="">
+                    <img src="img/Bookmarks.png" alt="Bookmarks-Manager" loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>Bookmarks-Manager</p>
@@ -121,7 +123,7 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/Event.png" alt="">
+                    <img src="img/Event.png" alt="Event Management Web Application" loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>Events Manager</p>
@@ -129,32 +131,31 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/Currency.png" alt="">
+                    <img src="img/Currency.png" alt="Currency Converter" loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>Currency Converter</p>
                         <a href="https://abd-alrhmen.github.io/Currency-Converter-With-API/"target="_blank"><i class='bx bx-link-external'></i></a>    
                     </div>
                 </div>
-        
                 <div class="portfolio-box">
-                    <img src="img/food.png"alt="">
+                    <img src="img/food.png"alt="Epicurean Eats"loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Epicurean Eats</h4>
-                        <p> showcasing the menu</p>
+                        <p>showcasing the menu</p>
                         <a href="#"><i class='bx bx-link-external'></i></a>    
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/youtuobe.png" alt="">
+                    <img src="img/youtuobe.png" alt="YouTube-Web Developer"loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Web Developer</h4>
                         <p>YouTube</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>    
+                        <a href="https://abd-alrhmen.github.io/youtupe/"><i class='bx bx-link-external'></i></a>    
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/Shop Store.png" alt="">
+                    <img src="img/Shop Store.png" alt="Shop the store for doors"loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Shop Store</h4>
                         <p>Shop the store for doors</p>
@@ -162,15 +163,15 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/cv.png" alt="">
+                    <img src="img/cv.png" alt="CV-Design"loading="lazy">
                     <div class="portfolio-layer">
-                        <h4>Web Desing</h4>
+                        <h4>Web Design</h4>
                         <p>CV</p>
                         <a href="#"><i class='bx bx-link-external'></i></a>    
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/adidas.png" alt="">
+                    <img src="img/adidas.png" alt="Adidas landing page Design"loading="lazy">
                     <div class="portfolio-layer">
                         <h4>Adidas</h4>
                         <p>Adidas landing page</p>
@@ -178,20 +179,19 @@
                     </div>
                 </div>
                 <div class="portfolio-box">
-                    <img src="img/portfolio.png" alt="">
+                    <img src="img/portfolio.png" alt="Portfolio-Web Design"loading="lazy">
                     <div class="portfolio-layer">
-                        <h4>Web Desing</h4>
+                        <h4>Web Design</h4>
                         <p>Portfolio</p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>    
+                        <a href="https://abd-alrhmen.github.io/my-site/"><i class='bx bx-link-external'></i></a>    
                     </div>
                 </div>
             </div>
             <!-- </div> -->
         </section>
-
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me!</span></h2>
-            <form action="#">
+            <form action="#" onsubmit="sendEmail(); reset(); return false;">
                 <div class="input-box">
                     <input type="text" id="FullName" placeholder="Full Name">
                     <input type="email" id="emailAddress" placeholder="email Address">
@@ -201,10 +201,9 @@
                     <input type="text" id="EmailSubject" placeholder="Email Subject">
                 </div>
                 <textarea name="" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-                <input onclick = "sendMail();" type="submit"  value="Send Message" class="btn">
+                <input type="submit"  value="Send Message" class="btn">
             </form>
         </section>
-
         <footer class="footer">
             <div class="footer-text">
                 <p>Copyright &copy; 2024 by Eng  Abdulrahman Ahmed</p>
@@ -219,5 +218,6 @@
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
 </body>
 </html>
