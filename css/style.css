@@ -7,7 +7,7 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: "Rubik",'Poppins',sans-serif;
+    font-family: "Familjen Grotesk", "Rubik", 'Poppins', sans-serif;
 }
 :root {
     --bg-color: #1c1c1c;
@@ -100,6 +100,10 @@ span {
 }
 .home-content p {
     font-size: 1.9rem;
+}
+.social-media {
+    display: flex;  
+    align-items: center;
 }
 .social-media a {
     display: inline-flex;
@@ -324,6 +328,7 @@ span {
     }
     .portfolio {
         padding-bottom: 7rem;
+                padding: 24px;
     }
     .portfolio-box {
         min-width: 279px;
@@ -394,9 +399,6 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
-    /* .portfolio-box {
-        margin-bottom: 29px;-----------------------
-    } */
 }
 @media (max-width: 365px) {
     .footer {
