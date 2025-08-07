@@ -288,7 +288,7 @@ span {
 }
 .footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
@@ -296,6 +296,12 @@ span {
 }
 .footer-text p {
     font-size: 1.6rem;
+}
+.footer-icontop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .footer-icontop a {
     display: inline-flex;
