@@ -23,8 +23,8 @@ export const caseStudies: Record<string, CaseStudy> = {
     slug: "guardix-mobile",
     title: "Guardix Mobile App",
     oneLiner:
-      "Enterprise React Native app for security operations — shipped as project lead.",
-    role: "Project Lead · Frontend",
+      "Enterprise React Native app for security operations — shipped end-to-end with the team.",
+    role: "Frontend · React Native",
     dates: "Dec 2025 – Feb 2026",
     stack: [
       "React Native",
@@ -36,7 +36,7 @@ export const caseStudies: Record<string, CaseStudy> = {
     ndaSafe: true,
     context: [
       "Guardix is a workforce-management product for security guard operations. The mobile app is the front-line tool guards use on shift.",
-      "I was project lead on the mobile build: planning, shipping, and reviewing the full screen catalogue against Figma specifications.",
+      "I owned the frontend implementation across the screen catalogue — translating Figma specs into production React Native screens, integrating with the backend, and keeping component consistency across the app.",
     ],
     contributions: [
       "Shipped 30+ production screens in three months, including AI Assistant and AI FAB Behavior, full Tickets History flow (pending / solving / closed), Inbox with chat details, Profile with tabbed sub-views (Overview / Activities / Documents / Notes), Reports, Payroll, Inventory, Documents, Reminders, Notifications, Settings, Info Center, Department, Skill Set, Expenses & Deductions, Feed, Feedback, Policies, and Availability.",
@@ -77,7 +77,7 @@ export const caseStudies: Record<string, CaseStudy> = {
     title: "Smicolon Marketing Site",
     oneLiner:
       "Multilingual Next.js site with a live Strapi → Payload CMS migration on Cloudflare Workers.",
-    role: "Full-stack Contributor · Migration Owner",
+    role: "Frontend + CMS Contributor",
     dates: "Oct 2025 – Present",
     stack: [
       "Next.js",
@@ -98,10 +98,10 @@ export const caseStudies: Record<string, CaseStudy> = {
     ],
     contributions: [
       "Built the Careers page end-to-end with a dynamic Strapi-powered Jobs component (no more hardcoded listings).",
-      "Enabled i18n across all dynamic Pages sections — adding a locale no longer overwrites the English content.",
-      "Led the site-wide performance pass: image AVIF/WebP via next/image, removed render-blocking scripts (ReCAPTCHA, observability), reduced client bundle, optimized Strapi data fetching with caching + dedup, enabled ISR.",
-      "Authored and own the multi-phase Payload CMS migration epic: validated Payload + Neon Postgres + R2 on Cloudflare Workers (Phase 0), shipped the Lexical → JSX rich-text renderer with custom converters for uploads and links (Phase 1), and am decoupling Strapi at runtime in Phase 2 (email adapter, ValueProjects collection, afterChange notification hooks, form migration, Strapi client decommission, ESLint guardrails).",
-      "Split staging vs prod R2 buckets and replaced silent env-var fallbacks with loud failures during infra hardening.",
+      "Helped enable i18n across all dynamic Pages sections — adding a locale no longer overwrites the English content.",
+      "Worked on the site-wide performance pass: image AVIF/WebP via next/image, removed render-blocking scripts (ReCAPTCHA, observability), reduced client bundle, optimized Strapi data fetching with caching + dedup, enabled ISR.",
+      "Contributed to the multi-phase Payload CMS migration: helped validate Payload + Neon Postgres + R2 on Cloudflare Workers (Phase 0), built the Lexical → JSX rich-text renderer with custom converters for uploads and links (Phase 1), and am working on Phase 2 — decoupling Strapi at runtime (email adapter, ValueProjects collection, afterChange notification hooks, form migration, Strapi client decommission, ESLint guardrails).",
+      "Helped split staging vs prod R2 buckets and replaced silent env-var fallbacks with loud failures during infra hardening.",
     ],
     highlights: [
       {
@@ -135,7 +135,7 @@ export const caseStudies: Record<string, CaseStudy> = {
     title: "Brandbuddy",
     oneLiner:
       "AI marketing platform — content planning, AI image generation, and brand intelligence.",
-    role: "Full-stack Contributor",
+    role: "Frontend + Supabase Contributor",
     dates: "Mar 2026 – Present",
     stack: [
       "React",

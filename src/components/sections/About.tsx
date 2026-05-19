@@ -34,7 +34,7 @@ export function About() {
     >
       <SectionHeading
         eyebrow="About"
-        title="Self-taught engineer, shipping production software."
+        title="Self-taught developer, shipping production software."
       />
 
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
@@ -47,7 +47,7 @@ export function About() {
             production work.
           </p>
           <p>
-            Today I&apos;m a frontend engineer at{" "}
+            Today I&apos;m a junior frontend developer at{" "}
             <a
               href="https://smicolon.com"
               target="_blank"
@@ -57,21 +57,21 @@ export function About() {
               Smicolon
             </a>
             , a software studio shipping client products across web and
-            mobile. I lead frontend on the Guardix Mobile App, own a CMS
-            migration to Cloudflare Workers for our marketing site, and ship
-            full-stack AI features on Brandbuddy. I work in React, Next.js,
-            and React Native every day.
+            mobile. I ship React Native screens on the Guardix Mobile App,
+            contribute to the Strapi → Payload CMS migration for our
+            marketing site, and build full-stack AI features on Brandbuddy.
+            I work in React, Next.js, and React Native every day.
           </p>
           <p>
             I use AI coding tools — Claude Code in particular — as part of
-            real delivery, not as a novelty. That changes what a single
-            engineer can ship in a sprint, and it&apos;s where I think the
-            craft is going.
+            real delivery, not as a novelty. That changes how much a junior
+            can ship in a sprint, and it&apos;s where I think the craft is
+            going.
           </p>
           <p>
             Long-term, I want to build my own technology company. For now
             I&apos;m focused on shipping high-quality production work and
-            growing as an engineer.
+            growing as a developer.
           </p>
         </div>
 

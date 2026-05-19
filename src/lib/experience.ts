@@ -18,12 +18,12 @@ export const experience: Experience[] = [
     summary:
       "Ship production frontend across web and mobile products, lead infrastructure work, and integrate AI features end-to-end.",
     bullets: [
-      "Project lead on the Guardix Mobile App (React Native, TypeScript) — shipped 30+ production screens in three months, including AI Assistant and AI FAB Behavior, Tickets History, Inbox, Profile tabs, Reports, Payroll, Inventory, Documents, Reminders and Notifications, plus API integration.",
-      "Owner of the Strapi → Payload CMS migration for smicolon.com running on Cloudflare Workers + Neon Postgres + R2: validated the Workers runtime, built the Lexical → JSX rich-text renderer with custom converters, shipped the SES email adapter and afterChange notification hooks, decoupled forms and decommissioned the Strapi client.",
-      "Led the performance overhaul of smicolon.com: image optimization to AVIF/WebP via next/image, removed render-blocking scripts, reduced client bundle size, enabled ISR caching, and deduped Strapi data fetching.",
-      "Contributed full-stack work on Brandbuddy: AI Assistant with smart suggestions, AI 1-year content plan, AI image generation via Gemini, Google OAuth on Supabase, Admin Settings module with React Query, 3-step welcome email flow, brand-color extraction from external CSS, multilingual support.",
-      "Built the Careers page on smicolon.com with a dynamic Strapi-powered Jobs component, and enabled i18n across all dynamic sections (EN + DE).",
-      "Day-to-day delivery using AI coding tools (Claude Code, Codex) integrated into PR-reviewed Git workflows, Figma → pixel-perfect implementation, and Linear-managed sprints.",
+      "Shipped 30+ production screens on the Guardix Mobile App (React Native, TypeScript) over three months — including AI Assistant and AI FAB Behavior, Tickets History, Inbox, Profile tabs, Reports, Payroll, Inventory, Documents, Reminders and Notifications — plus the Activities screen API integration.",
+      "Working on the Strapi → Payload CMS migration for smicolon.com on Cloudflare Workers + Neon Postgres + R2: helped validate the Workers runtime, built the Lexical → JSX rich-text renderer with custom converters, shipped the SES email adapter and afterChange notification hooks, and decoupled forms from the Strapi client.",
+      "Performance work on smicolon.com: image optimization to AVIF/WebP via next/image, removed render-blocking scripts, reduced client bundle, added ISR caching, deduped Strapi data fetching.",
+      "Built features on Brandbuddy across the stack: AI Assistant with context-aware suggestions, AI content plan + per-item actions (Reschedule, Regenerate, Generate AI Image via Gemini), Google OAuth via Supabase, Admin Settings module with React Query, default 3-step welcome email flow, and a brand-color extraction pipeline that reads external CSS.",
+      "Built the Careers page on smicolon.com with a Strapi-powered Jobs component, and helped enable i18n across all dynamic sections (EN + DE).",
+      "Day-to-day delivery using AI coding tools (Claude Code, Codex) inside PR-reviewed Git workflows, Figma → pixel-perfect implementation, and Linear-managed sprints.",
     ],
   },
   {

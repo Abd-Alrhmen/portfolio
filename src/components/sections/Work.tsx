@@ -1,8 +1,14 @@
+import Image from "next/image";
 import { ExternalLink } from "lucide-react";
 import { heroProjects, archivedProjects } from "@/lib/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Chip } from "@/components/ui/Chip";
+
+function repoPath(url?: string) {
+  if (!url) return undefined;
+  return url.replace(/^https?:\/\//, "").replace(/\/$/, "");
+}
 
 export function Work() {
   return (
@@ -37,32 +43,64 @@ export function Work() {
           </span>
         </summary>
         <div className="px-5 pb-6 pt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {archivedProjects.map((p) => (
-            <a
-              key={p.name}
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group/item p-4 rounded-lg border border-[--border] bg-white/[0.015] hover:border-[--accent]/30 hover:bg-white/[0.04] transition-all"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <span className="text-sm font-medium text-[--fg]">
-                  {p.name}
-                </span>
-                <ExternalLink
-                  size={12}
-                  className="text-[--fg-dim] group-hover/item:text-[--accent-hover] transition-colors shrink-0"
-                />
-              </div>
-              <div className="mt-2 flex flex-wrap gap-1">
-                {p.stack.slice(0, 3).map((s) => (
-                  <Chip key={s} size="sm" variant="muted">
-                    {s}
-                  </Chip>
-                ))}
-              </div>
-            </a>
-          ))}
+          {archivedProjects.map((p) => {
+            const path = repoPath(p.url);
+            return (
+              <a
+                key={p.name}
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/item flex flex-col overflow-hidden rounded-lg border border-[--border] bg-white/[0.015] hover:border-[--accent]/30 hover:bg-white/[0.04] transition-all"
+              >
+                <div className="relative aspect-[16/9] bg-gradient-to-br from-[--accent]/10 via-transparent to-fuchsia-500/10 overflow-hidden border-b border-[--border]">
+                  {p.image ? (
+                    <Image
+                      src={p.image}
+                      alt={p.name}
+                      fill
+                      sizes="(min-width: 1024px) 22vw, (min-width: 640px) 45vw, 90vw"
+                      className="object-cover opacity-80 group-hover/item:opacity-100 group-hover/item:scale-[1.02] transition-all duration-500"
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="font-mono text-2xl font-semibold text-white/30">
+                        {p.name
+                          .split(" ")
+                          .map((w) => w[0])
+                          .join("")
+                          .slice(0, 2)
+                          .toUpperCase()}
+                      </span>
+                    </div>
+                  )}
+                  <span className="absolute top-2 right-2 inline-flex h-7 w-7 items-center justify-center rounded-md bg-black/50 backdrop-blur-sm text-white/80 group-hover/item:text-white opacity-0 group-hover/item:opacity-100 transition-opacity">
+                    <ExternalLink size={12} />
+                  </span>
+                </div>
+
+                <div className="flex flex-col p-3.5">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-sm font-medium text-[--fg] truncate">
+                      {p.name}
+                    </span>
+                  </div>
+                  {path && (
+                    <span className="mt-1 font-mono text-[10.5px] text-[--fg-dim] truncate">
+                      {path}
+                    </span>
+                  )}
+                  <div className="mt-2.5 flex flex-wrap gap-1">
+                    {p.stack.slice(0, 3).map((s) => (
+                      <Chip key={s} size="sm" variant="muted">
+                        {s}
+                      </Chip>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            );
+          })}
         </div>
       </details>
     </section>

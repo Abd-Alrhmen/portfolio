@@ -15,6 +15,12 @@ export type Project = {
   };
   cover?: string;
   ndaSafe?: boolean;
+  /** Two-letter mark shown in the hero treatment when no cover image. */
+  mark: string;
+  /** Accent gradient stops used in the hero treatment. */
+  gradient: [string, string];
+  /** Short display string for the primary URL (e.g. `smicolon.com`). */
+  urlLabel?: string;
 };
 
 export const heroProjects: Project[] = [
@@ -22,20 +28,22 @@ export const heroProjects: Project[] = [
     slug: "guardix-mobile",
     title: "Guardix Mobile App",
     tagline:
-      "Enterprise mobile platform for security operations — shipped as project lead.",
-    role: "Project Lead · Frontend",
+      "Enterprise React Native app for security operations — shipped end-to-end with the team.",
+    role: "Frontend · React Native",
     status: "production",
     dates: "Dec 2025 – Feb 2026",
     stack: ["React Native", "TypeScript", "Figma", "REST APIs"],
     highlight: "30+ production screens · AI Assistant features · iOS + Android",
     ndaSafe: true,
+    mark: "GM",
+    gradient: ["#6366f1", "#a855f7"],
   },
   {
     slug: "smicolon-com",
     title: "Smicolon Marketing Site",
     tagline:
       "Multilingual Next.js marketing site with a live Strapi → Payload CMS migration on Cloudflare Workers.",
-    role: "Full-stack Contributor",
+    role: "Frontend + CMS",
     status: "production",
     dates: "Oct 2025 – Present",
     stack: [
@@ -47,15 +55,18 @@ export const heroProjects: Project[] = [
       "Cloudflare Workers",
       "Neon Postgres",
     ],
-    highlight: "EN + DE · ISR · CMS migration owner",
+    highlight: "EN + DE · ISR · Strapi → Payload migration",
     links: { live: "https://smicolon.com" },
+    urlLabel: "smicolon.com",
+    mark: "SM",
+    gradient: ["#6366f1", "#06b6d4"],
   },
   {
     slug: "brandbuddy",
     title: "Brandbuddy",
     tagline:
-      "AI-powered marketing platform — content planning, AI image generation, and brand intelligence.",
-    role: "Full-stack Contributor",
+      "AI marketing platform — content planning, AI image generation, and brand intelligence.",
+    role: "Frontend + Supabase",
     status: "production",
     dates: "Mar 2026 – Present",
     stack: [
@@ -68,6 +79,8 @@ export const heroProjects: Project[] = [
     ],
     highlight: "AI Assistant · AI image gen · OAuth · Multilingual (DA)",
     ndaSafe: true,
+    mark: "BB",
+    gradient: ["#6366f1", "#ec4899"],
   },
   {
     slug: "guardix-web",
@@ -80,6 +93,8 @@ export const heroProjects: Project[] = [
     stack: ["React", "TypeScript", "Tailwind"],
     highlight: "Web App Design Revamp",
     ndaSafe: true,
+    mark: "GW",
+    gradient: ["#6366f1", "#14b8a6"],
   },
   {
     slug: "nft-app",
@@ -91,6 +106,9 @@ export const heroProjects: Project[] = [
     dates: "2025",
     stack: ["Expo", "React Native", "TypeScript"],
     links: { repo: "https://github.com/Abd-Alrhmen/NFT-Application" },
+    urlLabel: "github.com/Abd-Alrhmen/NFT-Application",
+    mark: "NF",
+    gradient: ["#6366f1", "#f59e0b"],
   },
 ];
 
@@ -98,6 +116,7 @@ export type ArchivedProject = {
   name: string;
   stack: string[];
   url?: string;
+  image?: string;
 };
 
 export const archivedProjects: ArchivedProject[] = [
@@ -105,11 +124,13 @@ export const archivedProjects: ArchivedProject[] = [
     name: "McDonald's Web App",
     stack: ["React", "Tailwind", "Context API", "React Helmet"],
     url: "https://github.com/Abd-Alrhmen/mcdonalds-",
+    image: "/work/archive/mcdonalds.png",
   },
   {
     name: "TechNest Store",
     stack: ["React", "TypeScript", "JavaScript"],
     url: "https://github.com/Abd-Alrhmen/TechNest-Store",
+    image: "/work/archive/technest.png",
   },
   {
     name: "QuickPosts",
@@ -125,31 +146,37 @@ export const archivedProjects: ArchivedProject[] = [
     name: "To-Do App",
     stack: ["React", "TypeScript"],
     url: "https://github.com/Abd-Alrhmen/To-Do-App-React",
+    image: "/work/archive/todo.png",
   },
   {
     name: "Image Slider",
     stack: ["React", "TypeScript"],
     url: "https://github.com/Abd-Alrhmen/Image-Slider-APP",
+    image: "/work/archive/image-slider.png",
   },
   {
     name: "Bookmarks Manager",
     stack: ["JavaScript"],
     url: "https://github.com/Abd-Alrhmen/Bookmarks-Manager-Application",
+    image: "/work/archive/bookmarks.png",
   },
   {
     name: "Currency Converter",
     stack: ["JavaScript", "REST API"],
     url: "https://github.com/Abd-Alrhmen/Currency-Converter-With-API",
+    image: "/work/archive/currency.png",
   },
   {
     name: "Password Generator",
     stack: ["JavaScript", "CSS"],
     url: "https://github.com/Abd-Alrhmen/App-password-Generator",
+    image: "/work/archive/password.png",
   },
   {
     name: "Events Manager",
     stack: ["JavaScript"],
     url: "https://github.com/Abd-Alrhmen/Events-Manager",
+    image: "/work/archive/events.png",
   },
   {
     name: "Alarab News",
@@ -160,5 +187,6 @@ export const archivedProjects: ArchivedProject[] = [
     name: "Tic-Tac-Toe",
     stack: ["JavaScript"],
     url: "https://github.com/Abd-Alrhmen/Tic-Tac-Toe-Game",
+    image: "/work/archive/tictactoe.png",
   },
 ];
