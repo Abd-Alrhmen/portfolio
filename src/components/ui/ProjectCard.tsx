@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, ExternalLink, Sparkles } from "lucide-react";
 import { GithubIcon } from "@/components/ui/BrandIcons";
@@ -31,24 +32,44 @@ export function ProjectCard({ project, index }: Props) {
     >
       {/* Visual header */}
       <div
-        className="relative h-36 sm:h-44 overflow-hidden"
-        style={{
-          backgroundImage: `radial-gradient(ellipse 80% 100% at 20% 0%, ${from}33, transparent 60%), radial-gradient(ellipse 90% 100% at 100% 100%, ${to}33, transparent 65%), linear-gradient(135deg, ${from}1a, ${to}0d)`,
-        }}
+        className="relative h-44 sm:h-52 overflow-hidden"
+        style={
+          project.cover
+            ? undefined
+            : {
+                backgroundImage: `radial-gradient(ellipse 80% 100% at 20% 0%, ${from}33, transparent 60%), radial-gradient(ellipse 90% 100% at 100% 100%, ${to}33, transparent 65%), linear-gradient(135deg, ${from}1a, ${to}0d)`,
+              }
+        }
       >
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-[0.07]"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right, rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px)",
-            backgroundSize: "32px 32px",
-            maskImage:
-              "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 90%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 90%)",
-          }}
-        />
+        {project.cover ? (
+          <>
+            <Image
+              src={project.cover}
+              alt={`${project.title} screenshot`}
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover object-top opacity-90 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
+            />
+            <div
+              aria-hidden
+              className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"
+            />
+          </>
+        ) : (
+          <div
+            aria-hidden
+            className="absolute inset-0 opacity-[0.07]"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.6) 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+              maskImage:
+                "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 90%)",
+              WebkitMaskImage:
+                "radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent 90%)",
+            }}
+          />
+        )}
         <div
           aria-hidden
           className="absolute inset-x-6 bottom-0 h-px"
@@ -58,12 +79,12 @@ export function ProjectCard({ project, index }: Props) {
         />
         <div className="absolute top-4 left-5 right-5 flex items-start justify-between">
           <span
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-black/30 backdrop-blur-sm font-mono text-[13px] font-semibold tracking-tight text-white"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 bg-black/40 backdrop-blur-sm font-mono text-[13px] font-semibold tracking-tight text-white"
             aria-hidden
           >
             {project.mark}
           </span>
-          <span className="font-mono text-[10.5px] text-white/70 whitespace-nowrap pt-2.5">
+          <span className="font-mono text-[10.5px] text-white/80 whitespace-nowrap pt-2.5">
             {project.dates}
           </span>
         </div>

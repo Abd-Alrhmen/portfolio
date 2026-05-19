@@ -97,6 +97,25 @@ export const heroProjects: Project[] = [
     gradient: ["#6366f1", "#14b8a6"],
   },
   {
+    slug: "mcdonalds-web-app",
+    title: "McDonald's Web App",
+    tagline:
+      "Personal React build practicing state management, routing, and SEO — deployed and live.",
+    role: "Solo · Personal",
+    status: "personal",
+    dates: "2025",
+    stack: ["React", "Tailwind", "React Router", "Context API", "React Helmet"],
+    highlight: "Context-API state · Helmet SEO · deployed on Vercel",
+    links: {
+      live: "https://mcdonalds-three.vercel.app/",
+      repo: "https://github.com/Abd-Alrhmen/mcdonalds-",
+    },
+    urlLabel: "mcdonalds-three.vercel.app",
+    mark: "MD",
+    gradient: ["#fbbf24", "#dc2626"],
+    cover: "/work/mcdonalds.png",
+  },
+  {
     slug: "nft-app",
     title: "NFT Marketplace App",
     tagline:
@@ -121,13 +140,6 @@ export type ArchivedProject = {
 };
 
 export const archivedProjects: ArchivedProject[] = [
-  {
-    name: "McDonald's Web App",
-    stack: ["React", "Tailwind", "Context API", "React Helmet"],
-    live: "https://mcdonalds-three.vercel.app/",
-    repo: "https://github.com/Abd-Alrhmen/mcdonalds-",
-    image: "/work/archive/mcdonalds.png",
-  },
   {
     name: "TechNest Store",
     stack: ["React", "TypeScript", "JavaScript"],

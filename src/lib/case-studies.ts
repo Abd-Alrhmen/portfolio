@@ -227,6 +227,50 @@ export const caseStudies: Record<string, CaseStudy> = {
     ],
   },
 
+  "mcdonalds-web-app": {
+    slug: "mcdonalds-web-app",
+    title: "McDonald's Web App",
+    oneLiner:
+      "Personal React build that doubled as a sandbox for state management, routing, and SEO patterns I now use at work.",
+    role: "Solo · Personal",
+    dates: "2025",
+    stack: ["React", "Tailwind CSS", "React Router", "Context API", "React Helmet"],
+    links: {
+      live: "https://mcdonalds-three.vercel.app/",
+      repo: "https://github.com/Abd-Alrhmen/mcdonalds-",
+    },
+    context: [
+      "A personal project modeled on a fast-food ordering experience. The point wasn't fidelity to McDonald's — it was a real-world surface area to practice the React patterns I needed for production work.",
+      "Built end-to-end and deployed to Vercel so I could test the full path: clean repo → green build → live URL → real browser metrics.",
+    ],
+    contributions: [
+      "Designed a multi-route flow with React Router covering catalog, item detail, and cart screens.",
+      "Wired a Context API store for the cart with add / update-quantity / remove / total operations, so state stayed predictable across routes.",
+      "Used React Helmet to set per-route titles, descriptions, and meta tags — useful SEO practice on a CSR app.",
+      "Built the UI in Tailwind with a responsive grid, mobile-first navigation, and reusable card components.",
+      "Deployed on Vercel with the standard preview-on-PR flow.",
+    ],
+    highlights: [
+      {
+        heading: "Why it's in the portfolio",
+        body: [
+          "Most of the patterns I now apply at Smicolon — route-level metadata, scoped state, reusable cards, responsive layouts — first got their reps on this project. Keeping it visible is honest about the path.",
+        ],
+      },
+      {
+        heading: "Production-style discipline on a personal repo",
+        body: [
+          "Component boundaries, props typing, and a deployed live URL — not a code-only repo. Treating personal projects like real software is how the muscle memory transfers when the stakes go up.",
+        ],
+      },
+    ],
+    impact: [
+      "Deployed and live at mcdonalds-three.vercel.app",
+      "Open-source on GitHub for review",
+      "Foundation for React patterns used in production work since",
+    ],
+  },
+
   "nft-app": {
     slug: "nft-app",
     title: "NFT Marketplace App",
