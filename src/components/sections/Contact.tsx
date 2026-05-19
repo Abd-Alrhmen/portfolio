@@ -20,7 +20,7 @@ const channels = [
   {
     icon: LinkedinIcon,
     label: "LinkedIn",
-    value: "in/abdulrahman-ahmed-hassan",
+    value: "Open profile",
     href: siteConfig.social.linkedin,
   },
   {

@@ -115,7 +115,8 @@ export const heroProjects: Project[] = [
 export type ArchivedProject = {
   name: string;
   stack: string[];
-  url?: string;
+  live?: string;
+  repo?: string;
   image?: string;
 };
 
@@ -123,70 +124,79 @@ export const archivedProjects: ArchivedProject[] = [
   {
     name: "McDonald's Web App",
     stack: ["React", "Tailwind", "Context API", "React Helmet"],
-    url: "https://github.com/Abd-Alrhmen/mcdonalds-",
+    live: "https://mcdonalds-three.vercel.app/",
+    repo: "https://github.com/Abd-Alrhmen/mcdonalds-",
     image: "/work/archive/mcdonalds.png",
   },
   {
     name: "TechNest Store",
     stack: ["React", "TypeScript", "JavaScript"],
-    url: "https://github.com/Abd-Alrhmen/TechNest-Store",
+    live: "https://abd-alrhmen.github.io/TechNest-Store/",
+    repo: "https://github.com/Abd-Alrhmen/TechNest-Store",
     image: "/work/archive/technest.png",
   },
   {
     name: "QuickPosts",
     stack: ["React", "TypeScript", "Vite"],
-    url: "https://github.com/Abd-Alrhmen/quickposts",
+    repo: "https://github.com/Abd-Alrhmen/quickposts",
   },
   {
     name: "SRM System",
     stack: ["React", "TypeScript", "Vite"],
-    url: "https://github.com/Abd-Alrhmen/SRM-System",
+    repo: "https://github.com/Abd-Alrhmen/SRM-System",
   },
   {
     name: "To-Do App",
     stack: ["React", "TypeScript"],
-    url: "https://github.com/Abd-Alrhmen/To-Do-App-React",
+    live: "https://abd-alrhmen.github.io/To-Do-App-React/",
+    repo: "https://github.com/Abd-Alrhmen/To-Do-App-React",
     image: "/work/archive/todo.png",
   },
   {
     name: "Image Slider",
     stack: ["React", "TypeScript"],
-    url: "https://github.com/Abd-Alrhmen/Image-Slider-APP",
+    live: "https://abd-alrhmen.github.io/Image-Slider-APP/",
+    repo: "https://github.com/Abd-Alrhmen/Image-Slider-APP",
     image: "/work/archive/image-slider.png",
   },
   {
     name: "Bookmarks Manager",
     stack: ["JavaScript"],
-    url: "https://github.com/Abd-Alrhmen/Bookmarks-Manager-Application",
+    live: "https://abd-alrhmen.github.io/Bookmarks-Manager-Application/",
+    repo: "https://github.com/Abd-Alrhmen/Bookmarks-Manager-Application",
     image: "/work/archive/bookmarks.png",
   },
   {
     name: "Currency Converter",
     stack: ["JavaScript", "REST API"],
-    url: "https://github.com/Abd-Alrhmen/Currency-Converter-With-API",
+    live: "https://abd-alrhmen.github.io/Currency-Converter-With-API/",
+    repo: "https://github.com/Abd-Alrhmen/Currency-Converter-With-API",
     image: "/work/archive/currency.png",
   },
   {
     name: "Password Generator",
     stack: ["JavaScript", "CSS"],
-    url: "https://github.com/Abd-Alrhmen/App-password-Generator",
+    live: "https://abd-alrhmen.github.io/App-password-Generator/",
+    repo: "https://github.com/Abd-Alrhmen/App-password-Generator",
     image: "/work/archive/password.png",
   },
   {
     name: "Events Manager",
     stack: ["JavaScript"],
-    url: "https://github.com/Abd-Alrhmen/Events-Manager",
+    live: "https://abd-alrhmen.github.io/Events-Manager/",
+    repo: "https://github.com/Abd-Alrhmen/Events-Manager",
     image: "/work/archive/events.png",
   },
   {
     name: "Alarab News",
     stack: ["JavaScript"],
-    url: "https://github.com/Abd-Alrhmen/Alarab-News",
+    repo: "https://github.com/Abd-Alrhmen/Alarab-News",
   },
   {
     name: "Tic-Tac-Toe",
     stack: ["JavaScript"],
-    url: "https://github.com/Abd-Alrhmen/Tic-Tac-Toe-Game",
+    live: "https://abd-alrhmen.github.io/Tic-Tac-Toe-Game/",
+    repo: "https://github.com/Abd-Alrhmen/Tic-Tac-Toe-Game",
     image: "/work/archive/tictactoe.png",
   },
 ];

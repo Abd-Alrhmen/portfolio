@@ -4,8 +4,9 @@ import { heroProjects, archivedProjects } from "@/lib/projects";
 import { ProjectCard } from "@/components/ui/ProjectCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Chip } from "@/components/ui/Chip";
+import { GithubIcon } from "@/components/ui/BrandIcons";
 
-function repoPath(url?: string) {
+function urlHost(url?: string) {
   if (!url) return undefined;
   return url.replace(/^https?:\/\//, "").replace(/\/$/, "");
 }
@@ -44,16 +45,21 @@ export function Work() {
         </summary>
         <div className="px-5 pb-6 pt-1 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {archivedProjects.map((p) => {
-            const path = repoPath(p.url);
+            const primary = p.live ?? p.repo;
+            const liveHost = urlHost(p.live);
+
             return (
-              <a
+              <div
                 key={p.name}
-                href={p.url}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="group/item flex flex-col overflow-hidden rounded-lg border border-[--border] bg-white/[0.015] hover:border-[--accent]/30 hover:bg-white/[0.04] transition-all"
               >
-                <div className="relative aspect-[16/9] bg-gradient-to-br from-[--accent]/10 via-transparent to-fuchsia-500/10 overflow-hidden border-b border-[--border]">
+                <a
+                  href={primary}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative aspect-[16/9] block bg-gradient-to-br from-[--accent]/10 via-transparent to-fuchsia-500/10 overflow-hidden border-b border-[--border]"
+                  aria-label={`Open ${p.name}${p.live ? " live demo" : " repository"}`}
+                >
                   {p.image ? (
                     <Image
                       src={p.image}
@@ -74,21 +80,34 @@ export function Work() {
                       </span>
                     </div>
                   )}
+                  {p.live && (
+                    <span className="absolute top-2 left-2 inline-flex items-center gap-1 rounded-md bg-emerald-500/15 backdrop-blur-sm border border-emerald-400/30 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-wider text-emerald-300">
+                      ● Live
+                    </span>
+                  )}
                   <span className="absolute top-2 right-2 inline-flex h-7 w-7 items-center justify-center rounded-md bg-black/50 backdrop-blur-sm text-white/80 group-hover/item:text-white opacity-0 group-hover/item:opacity-100 transition-opacity">
                     <ExternalLink size={12} />
                   </span>
-                </div>
+                </a>
 
-                <div className="flex flex-col p-3.5">
-                  <div className="flex items-center justify-between gap-2">
-                    <span className="text-sm font-medium text-[--fg] truncate">
-                      {p.name}
-                    </span>
-                  </div>
-                  {path && (
-                    <span className="mt-1 font-mono text-[10.5px] text-[--fg-dim] truncate">
-                      {path}
-                    </span>
+                <div className="flex flex-col flex-1 p-3.5">
+                  <a
+                    href={primary}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium text-[--fg] hover:text-[--accent-hover] transition-colors truncate"
+                  >
+                    {p.name}
+                  </a>
+                  {liveHost && (
+                    <a
+                      href={p.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 font-mono text-[10.5px] text-[--fg-dim] hover:text-[--accent-hover] transition-colors truncate"
+                    >
+                      {liveHost}
+                    </a>
                   )}
                   <div className="mt-2.5 flex flex-wrap gap-1">
                     {p.stack.slice(0, 3).map((s) => (
@@ -97,8 +116,33 @@ export function Work() {
                       </Chip>
                     ))}
                   </div>
+                  <div className="mt-3 flex items-center gap-3 text-[11px]">
+                    {p.live && (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[--accent-hover] hover:text-[--accent] transition-colors"
+                      >
+                        View project
+                        <ExternalLink size={11} />
+                      </a>
+                    )}
+                    {p.repo && (
+                      <a
+                        href={p.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-[--fg-muted] hover:text-[--fg] transition-colors"
+                        aria-label={`${p.name} source code`}
+                      >
+                        Code
+                        <GithubIcon size={11} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </a>
+              </div>
             );
           })}
         </div>
