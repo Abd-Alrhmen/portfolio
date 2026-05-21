@@ -13,7 +13,7 @@ export const siteConfig = {
   resumeUrl: "/cv.pdf",
   social: {
     github: "https://github.com/Abd-Alrhmen",
-    linkedin: "https://www.linkedin.com/in/abdelrahman-ahmed-60b468262/",
+    linkedin: "https://www.linkedin.com/in/abdulrahman-ahmed-60b468262",
     whatsapp: "https://wa.me/201007434698",
   },
   url: "https://abd-alrhmen.github.io/portfolio",
