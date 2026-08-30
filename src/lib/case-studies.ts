@@ -130,6 +130,73 @@ export const caseStudies: Record<string, CaseStudy> = {
     ],
   },
 
+  "taskly": {
+    slug: "taskly",
+    title: "Taskly",
+    oneLiner:
+      "Personal full-stack project built to deepen my MERN Stack fundamentals through a complete end-to-end task management application.",
+    role: "Solo · Personal",
+    dates: "2026",
+    stack: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+    ],
+    links: {
+      live: "https://taskly-eosin-one.vercel.app/",
+      repo: "https://github.com/Abd-Alrhmen/taskly",
+    },
+    context: [
+      "Taskly is a personal learning project built to strengthen my understanding of full-stack JavaScript development with the MERN Stack.",
+      "I wanted to go beyond frontend development and practice the complete flow of a real application — from the React interface to the REST API, authentication, database, and deployment.",
+    ],
+    contributions: [
+      "Built the React frontend with registration, login, dashboard, and task management flows.",
+      "Implemented JWT-based authentication and protected API routes.",
+      "Built the Express.js and Node.js REST API for authentication and task CRUD operations.",
+      "Designed MongoDB schemas with Mongoose for users and tasks.",
+      "Implemented task creation, editing, deletion, status management, and priority management.",
+      "Added task search by title.",
+      "Connected the React frontend with the backend API and handled authentication state.",
+      "Configured separate frontend and backend environments and prepared the application for deployment.",
+    ],
+    highlights: [
+      {
+        heading: "Learning full-stack development",
+        body: [
+          "The main goal was learning by building. Instead of following isolated tutorials, I built a complete application where the frontend, backend, authentication, database, and deployment had to work together.",
+        ],
+      },
+      {
+        heading: "JWT authentication",
+        body: [
+          "Implemented token-based authentication with protected API routes and user-specific task access to understand how authentication works across a frontend and backend.",
+        ],
+      },
+      {
+        heading: "Complete CRUD workflow",
+        body: [
+          "Built the full task lifecycle — creating, editing, deleting, searching, and managing task status and priority — to practice designing and consuming REST APIs.",
+        ],
+      },
+      {
+        heading: "MERN architecture",
+        body: [
+          "Used React for the frontend, Node.js and Express.js for the backend, and MongoDB with Mongoose for data persistence, giving me hands-on experience with the complete MERN stack.",
+        ],
+      },
+    ],
+    impact: [
+      "Strengthened my understanding of the MERN Stack",
+      "Built a complete full-stack application independently",
+      "Practiced JWT authentication, REST APIs, MongoDB, and CRUD operations",
+      "Public GitHub repository available for technical review",
+    ],
+  },
+
   brandbuddy: {
     slug: "brandbuddy",
     title: "Brandbuddy",

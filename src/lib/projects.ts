@@ -116,6 +116,22 @@ export const heroProjects: Project[] = [
     cover: "/work/mcdonalds.png",
   },
   {
+    slug: "taskly",
+    title: "Taskly", 
+    tagline: "Full-stack task management web app built with the MERN stack, featuring authentication and complete task management.", 
+    role: "Solo · Full Stack", 
+    status: "personal", dates: "2026", stack: [ "React", "Node.js", "Express.js", "MongoDB", "Mongoose", "JWT", ], 
+    highlight: "JWT Authentication · CRUD Tasks · Search · Status & Priority Management", 
+    links: { 
+      live: "https://taskly-eosin-one.vercel.app/", 
+      repo: "https://github.com/Abd-Alrhmen/taskly", 
+    }, 
+    urlLabel: "taskly-eosin-one.vercel.app", 
+    mark: "TK", 
+    gradient: ["#6366f1", "#06b6d4"],
+    cover: "/work/taskly-app.png", 
+  },
+  {
     slug: "nft-app",
     title: "NFT Marketplace App",
     tagline:
